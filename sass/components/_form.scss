@@ -1,0 +1,252 @@
+// Footer-form
+
+.form-container{
+  width: 570px;
+}
+
+.footer-follow{
+  display: flex;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  margin-left: 93px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1,14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $thirdly-text-color;
+}
+
+.form{
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 93px;
+}
+
+.footer-border {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 358px;
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  height: 50px;
+
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+
+  outline: none;
+}
+
+.svg-footer{
+  bottom: 13px;
+  top: 13px;
+  right: 28px;
+  position: absolute;
+  fill: $thirdly-text-color;
+}
+
+// Hero form
+
+.backdrop{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  visiability 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden{
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal{
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+  min-width: 528px;
+  min-height: 581px;
+
+  background: $thirdly-text-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+  0px 1px 1px rgba(0, 0, 0, 0.14),
+  0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-form{
+  padding: 40px;
+}
+
+.modal-hero{
+  margin-top: 0;
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1,15;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $text-color;
+}
+
+.form-field{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  
+  margin-bottom: 10px;
+
+  &:hover .form-input,
+  &:focus .form-input{
+  border: 1px solid $main-color;
+  }
+
+  &:hover .svg-modal,
+  &:focus .svg-modal  {
+  fill:$main-color;
+}
+}
+
+.name{
+  margin-bottom: 4px;
+
+  font-size: 12px;
+  line-height: 1,16;
+  letter-spacing: 0.01em;
+
+  color: $secondary-text-color;
+}
+
+.form-input{
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  padding-left: 42px;
+  cursor: pointer;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+
+  &:focus .svg-modal{
+    fill: #188ce8;
+  }
+}
+
+.svg-modal{
+  position: absolute;
+
+  left: 15px;
+  bottom: 14px;
+
+  fill: $text-color;
+
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close{
+  display: block;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  background-color: transparent;
+
+  &:hover .close-icon,
+  &:focus .close-icon{
+  fill:$main-color;
+}  
+}
+
+.close-icon{
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+.comment{
+  padding: 16px 12px;
+  height: 120px;
+  width: 448px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  outline: none;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 0,8;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
+
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+  border: 1px solid $main-color;
+}
+}
+
+.checkbox-input{
+  display: block;
+}
+
+.terms{
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  margin-top: 20px;
+
+  color: $secondary-text-color;
+}
+
+ .terms-link{
+  margin-left: 5px;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+
+  text-decoration: underline;
+  color: $main-color
+}
+
+.checkbox-hidden{
+  visibility: hidden;
+
+  &:checked + .custom-checkbox{
+  border: transparent;
+  background-size: contain;
+  box-sizing: border-box;
+  background-image: url(../images/check-2.svg);
+}
+}
+
+.custom-checkbox{
+  width: 16px;
+  height: 15px;
+  content: '';
+  border: 2px solid $text-color;
+  border-radius: 2px;
+  margin-right: 8px;
+}
+
+

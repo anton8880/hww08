@@ -1,0 +1,116 @@
+.button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  background-color: #2196F3;
+  color: #f5f4fa;
+
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: #188ce8;
+  }
+}
+
+
+
+.button-two {
+  display: flex;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+  background-color: #f5f4fa;
+
+  font-weight: 500;
+  font-size: 1.6;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: #212121;
+
+  &:hover,
+  &:focus,
+  &:active{
+    background-color: $main-color;
+    color: $thirdly-text-color;
+     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+
+.button-follow.btn{
+  background-color: $main-color;
+  border: transparent;
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1,87;
+  letter-spacing: 0.06em;
+
+  color: $thirdly-text-color;
+
+  &:hover,
+  &:focus{
+    background-color: #188ce8;
+  }
+}
+
+.button-follow{
+  position: relative;
+  min-width: 200px;
+  height: 50px;
+
+  margin-left: 12px;
+  
+
+  background-color: $main-color;
+  border: transparent;
+  border-radius: 4px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus{
+    background-color: #188ce8;
+  }
+}
+
+.btn{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.button-text{
+display: flex;
+margin-left: 29px;
+font-weight: bold;
+font-size: 16px;
+line-height: 1,87;
+letter-spacing: 0.06em;
+
+color: $thirdly-text-color;
+}
