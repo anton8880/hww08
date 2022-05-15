@@ -7,7 +7,9 @@
     margin: 0px;
     padding: 0px;
 }
- 
+.review{
+height: 700px;
+}
 .review-slider{
     width: 280px;
     overflow: hidden;
@@ -158,7 +160,10 @@ margin-bottom: 40px;
 .review{
     display: none;
 }
-
+.review-tablet{
+   width: 100%;
+   height: 539px;
+}
 *{
   margin: 0;
 	padding: 0;
@@ -322,4 +327,5 @@ color: #3D3D3D;
     top: 157px;
     left: 0px;
 }
+
 }
